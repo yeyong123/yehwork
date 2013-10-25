@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=1024, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <title>物流系统</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/formalize.css" />
+    <link rel="stylesheet" href="css/checkboxes.css" />
+    <link rel="stylesheet" href="css/sourcerer.css" />
+    <link rel="stylesheet" href="css/jqueryui.css" />
+    <link rel="stylesheet" href="css/tipsy.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="stylesheet" href="css/tags.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/selectboxes.css" />
+    <link rel="stylesheet" href="css/960.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css" />
+    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/excanvas.js"></script>
+    <![endif]-->
+    
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jqueryui.min.js"></script>
+    <script src="js/jquery.cookies.js"></script>
+    <script src="js/jquery.pjax.js"></script>
+    <script src="js/formalize.min.js"></script>
+    <script src="js/jquery.metadata.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.checkboxes.js"></script>
+    <script src="js/jquery.chosen.js"></script>
+    <script src="js/jquery.fileinput.js"></script>
+    <script src="js/jquery.datatables.js"></script>
+    <script src="js/jquery.sourcerer.js"></script>
+    <script src="js/jquery.tipsy.js"></script>
+    <script src="js/jquery.calendar.js"></script>
+    <script src="js/jquery.inputtags.min.js"></script>
+    <script src="js/jquery.wymeditor.js"></script>
+    <script src="js/jquery.livequery.js"></script>
+    <script src="js/jquery.flot.min.js"></script>
+    <script src="js/application.js"></script>
+  </head>
+  
+  <body>
+	  <div class="box">
+		  <div class="boxi">
+		  <h1>biaotou</h1>
+	  </div>
+		  <div class="box1">
+			  欢迎
+			  <span class="glyph user"></span>
+			  13
+			  <a href="#">注销</a>
+		  </div>
+	  </div>
+    <!-- Primary navigation -->
+    <nav id="primary">
+      <ul>
+        <li class="active">
+          <a href="dashboard.html">
+            <span class="glyph dashboard"></span>
+            控制面板 
+          </a>
+        </li>
+        <li >
+          <a href="tables/tables.html">
+            <span class="glyph shuffle"></span>
+            产品管理 
+          </a>
+        </li>
+        <li >
+          <a href="forms/forms.html">
+            <span class="glyph pencil"></span>
+            会员管理
+          </a>
+        </li>
+        <li >
+          <a href="tables/schedule.html">
+            <span class="glyph listicon"></span>
+            日程安排
+          </a>
+        </li>
+               <li >
+          <a href="#">
+            <span class="glyph chart"></span>
+            广告管理
+          </a>
+        </li>
+        <li class="bottom">
+          <a href="#">
+            <span class="glyph quit"></span>
+            注销用户
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Secondary navigation -->
+
+
+
+	<section id="maincontainer">
+		<div id="main" class="container_12">
+			<div class="box">
+				<div class="box-header">
+					<h1>快速查询</h1>
+				</div>
+
+				<table class="datatable">
+					<div class="box column-left">
+						<ul class="statistics">
+							<li>
+							<form method="get">
+								<p>
+								<span>姓名:</span>
+								<input type="text" id="name" name="name" />
+								</p>
+								<p>
+								<span>公司名称:</span>
+								<input type="text" name="company" />
+								</p>
+								<p>
+								<span>关键字:</span>
+								<input type="text" name="keyword" />
+								</p>
+								<button type="submit" class="button blue">
+									<span class="glyph search"></span>
+									 查询</button>
+							</form>
+							</li>
+
+						</ul>
+						<div class="action_bar">
+							<a href="#" class="button small"><span class="glyph export"></span>导出数据</a>
+							<a href="#" class="button small"><span class="glyph print"></span>打印数据</a>
+						</div>
+					</div>
+				</div>
+		<form method="get" action="#">
+				</form>
+			</table>
+		</div>
+
+	</div>
+
+	<div id="main" class="container_12">
+		<div class="box">
+			<div class="box-header">
+				<h1>产品列表</h1>
+			</div>
+
+			<table class="datatable">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>产品名称</th>
+						<th>产品编号</th>
+						<th>描述</th>
+						<th>状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>343</td>
+						<td>产品1</td>
+						<td>EIF234524</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>234</td>
+						<td>产品400</td>
+						<td>EIF345346</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>665</td>
+						<td>产品5125</td>
+						<td>EIF234544</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>212</td>
+						<td>产品923</td>
+						<td>EIF435553</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>123</td>
+						<td>产品35</td>
+						<td>EIF533535</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>125</td>
+						<td>产品14</td>
+						<td>EIF161661</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>126</td>
+						<td>产品234</td>
+						<td>EIF235345</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>127</td>
+						<td>产品89</td>
+						<td>EIF890890</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>186</td>
+						<td>产品5</td>
+						<td>EIF617061</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>625</td>
+						<td>产品345</td>
+						<td>EIF345786</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>876</td>
+						<td>产品2354</td>
+						<td>EIF23453354</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>745</td>
+						<td>产品3652</td>
+						<td>EIF21353456</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>287</td>
+						<td>产品33</td>
+						<td>EIF23534634</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>403</td>
+						<td>产品3030</td>
+						<td>EIF3534534</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+					<tr>
+						<td>230</td>
+						<td>产品45</td>
+						<td>EIF2355444</td>
+						<td>产品描述内容</td>
+						<td>
+							<a href="#" class="button plain">编辑</a>
+							<a href="#" class="button plain">删除</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	</section>
+</body>
+</html>
